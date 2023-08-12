@@ -6,11 +6,12 @@ class MinStack:
         self.arr = []
         self.min1 = []
         
+        self.n = 0
 
     def push(self, val: int) -> None:
         self.arr.append(val)
-        val = min(val, self.min1[-1] if self.min1 else val)
-        self.min1.append(val)
+        n = min(val, self.min1[-1] if self.min1 else val)
+        self.min1.append(n)
 
     def pop(self) -> None:
         self.arr.pop()
