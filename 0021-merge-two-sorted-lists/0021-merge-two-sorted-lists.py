@@ -21,9 +21,14 @@ class Solution:
                     tail.next = list1
                     list1 = list1.next
                     
-                else:
+                elif(list1.val > list2.val):
                     tail.next = list2
                     list2 = list2.next
+                    
+                elif(list1.val == list2.val):
+                    tail.next = list2
+                    list2 = list2.next
+                    
                     
                 tail = tail.next
                 
