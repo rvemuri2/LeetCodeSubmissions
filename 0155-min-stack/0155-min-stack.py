@@ -6,7 +6,6 @@ class MinStack:
         self.arr = []
         self.arr2 = []
         
-        self.number = 0
 
     def push(self, val: int) -> None:
         self.arr.append(val)
