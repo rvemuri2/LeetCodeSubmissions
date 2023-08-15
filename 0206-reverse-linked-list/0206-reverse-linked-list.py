@@ -9,9 +9,10 @@ class Solution:
         prev = None
         curr = head
         
-        if(head == None):
-            return head
+        if(curr== None):
+            return curr
         else:
+        
             while(curr != None):
                 n = curr.next
                 curr.next = prev
@@ -19,9 +20,12 @@ class Solution:
                 curr = n
                 
                 
-                 
-                
         
         return prev
+            
+        
+                
+        
+      
         
         
