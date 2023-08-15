@@ -10,35 +10,29 @@ class Solution:
         
         curr = ListNode()
         tail = curr
-        
-        if(list1 == None and list2 == None):
-            return list1
-        
-        else:
-            while(list1 and list2):
-                
-                if(list1.val < list2.val):
-                    tail.next = list1
-                    list1 = list1.next
-                    
-                elif(list1.val > list2.val):
-                    tail.next = list2
-                    list2 = list2.next
-                    
-                elif(list1.val == list2.val):
-                    tail.next = list1
-                    list1 = list1.next
-                    
-                    
-                tail = tail.next
-                
-            if(list1 != None):
+        while(list1 != None and list2 != None):
+            if(list1.val < list2.val):
+            
                 tail.next = list1
-            elif(list2 != None):
-                tail.next = list2
+                list1 = list1.next
                 
-                    
-            return curr.next
+            else:
+                tail.next = list2
+                list2 = list2.next
+                
+            
+            tail = tail.next
+            
+        
+        if(list1):
+            tail.next = list1
+            
+        elif(list2):
+            tail.next = list2
+            
+        return curr.next
+            
+        
                 
              
             
