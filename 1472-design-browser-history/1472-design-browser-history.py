@@ -8,8 +8,8 @@ class Node:
 class BrowserHistory:
 
     def __init__(self, homepage: str):
+        
         self.curr = Node(homepage)
-        self.prev = None
         
         
 
@@ -22,14 +22,14 @@ class BrowserHistory:
         while(self.curr.prev != None and steps > 0):
             self.curr = self.curr.prev
             steps -= 1
-        
+            
         return self.curr.val
 
     def forward(self, steps: int) -> str:
         while(self.curr.next != None and steps > 0):
             self.curr = self.curr.next
             steps -= 1
-        
+            
         return self.curr.val
 
 
