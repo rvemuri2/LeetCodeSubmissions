@@ -1,26 +1,33 @@
 class Solution:
     def calPoints(self, operations: List[str]) -> int:
         
+        
         arr = []
-        sum1 = 0
-        for i in range(0, len(operations)):
-            if(operations[i].isnumeric() or (operations[i] != "C" and operations[i] != "D" and operations[i] != "+") ):
-                arr.append(int(operations[i]))
+        sum2 = 0
+        
+        for i in operations:
+            
+            if(i.isnumeric and i != "+" and i != "D" and i != "C"):
                 
-            if(operations[i] == "C"):
+                arr.append(int(i))
+                
+            elif(i == "C"):
                 arr.pop()
                 
-            if(operations[i] == "D"):
-                arr.append(int(arr[-1] * 2))
-   
+            elif(i == "D"):
+                arr.append(int(arr[-1]) * 2)
                 
-            if(operations[i] == "+"):
-                arr.append(int(arr[-1]) + int(arr[len(arr) - 2]))
+            elif(i == "+"):
+                sum1 = int(arr[-1]) + int(arr[len(arr) - 2])
+                arr.append(sum1)
                 
+            
         
         for i in arr:
-            sum1 += i
-            print(i)
             
-        return sum1
+            sum2 += i
+            
+        return sum2
+      
+       
             
