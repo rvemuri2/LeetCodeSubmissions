@@ -21,8 +21,5 @@ class Solution:
                 
             
             
-        if(len(students) == 0):
-            return 0
-        else:
-            return len(students)
+        return count
         
