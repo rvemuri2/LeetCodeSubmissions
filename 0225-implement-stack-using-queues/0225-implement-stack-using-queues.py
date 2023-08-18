@@ -2,7 +2,7 @@ class MyStack:
 
     def __init__(self):
         
-        self.arr = []
+        self.arr = deque()
         
 
     def push(self, x: int) -> None:
@@ -12,9 +12,11 @@ class MyStack:
 
     def pop(self) -> int:
         
-        val = self.arr.pop()
-        
-        return val
+        for i in range(0, len(self.arr) - 1):
+            
+            self.arr.append(self.arr.popleft())
+            
+        return self.arr.popleft()
         
 
     def top(self) -> int:
