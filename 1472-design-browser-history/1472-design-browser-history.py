@@ -26,7 +26,7 @@ class BrowserHistory(object):
 
     def back(self, steps):
         
-        while(self.curr.prev != None and steps > 0):
+        while(self.curr.prev != None and steps != 0):
             self.curr = self.curr.prev
             steps -= 1
         """
@@ -37,7 +37,7 @@ class BrowserHistory(object):
         
 
     def forward(self, steps):
-        while(self.curr.next != None and steps > 0):
+        while(self.curr.next != None and steps != 0):
             self.curr = self.curr.next
             steps -= 1
         """
