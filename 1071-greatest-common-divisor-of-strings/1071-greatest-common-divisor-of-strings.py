@@ -13,6 +13,10 @@ class Solution:
         for i in range(min(l1, l2), 0, -1):
             
             if GCD(i):
-                return str1[:i]
+                return str2[:i]
                 
-        return ""
+        return "" 
+    
+    
+    
+    
