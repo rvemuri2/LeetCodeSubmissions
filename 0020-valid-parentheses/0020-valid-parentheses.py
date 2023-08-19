@@ -1,34 +1,35 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         
-        t = False
-        
-        h = {")": "(", "}":"{", "]":"["}
-        
+      
+        h  = {"}": "{", "]":"[", ")":"("}
+    
         arr = []
+    
+    
+        for i in s: 
         
-        
-        for i in s:
-            
-            
-            if(i == "(" or i == "{" or i == "["):  
+            if(i == "(" or i == "{" or i == "["):
                 arr.append(i)
-                
-            if(i in h and len(arr) == 0):
-                return False
-                
-            else:
-                if(i in h and len(arr) > 0):
-                    if(h.get(i) == arr[-1]):
+            
+            if(i in h.keys()):
+                if(len(arr) == 0):
+                    return False
+            
+                else:
+                    if(arr[-1] == h.get(i)):
                         arr.pop()
                     else:
                         return False
-                       
         
+    
         if(len(arr) == 0):
             return True
         else:
             return False
+        
+    
+    
                     
         
                 
