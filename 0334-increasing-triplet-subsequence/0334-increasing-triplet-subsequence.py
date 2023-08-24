@@ -1,21 +1,22 @@
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
-    
-    
-    
-        num1, num2 = float("inf"), float("inf")
+        
+        n1, n2 = 100000000000, 100000000000
         
         for i in nums: 
             
-            if(i <= num1):
-                num1 = i
+            if(i <= n1):
+                n1 = i
                 
-            elif(i <= num2):
-                num2 = i
-                
+            elif(i <= n2):
+                n2 = i
+            
             else:
                 return True
             
-        
+    
+    
         return False
+    
+       
         
