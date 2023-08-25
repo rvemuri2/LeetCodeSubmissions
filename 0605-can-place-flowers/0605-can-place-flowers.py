@@ -1,17 +1,37 @@
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         
-        arr = [0] + flowerbed + [0]
+        count = 0
         
-        for i in range(1, len(arr) - 1):
-            if(arr[i] == 0 and arr[i-1] == 0 and arr[i + 1] == 0):
-                arr[i] = 1
-                n-=1
+        for i in range(len(flowerbed)):
+            
+            if(flowerbed[i] == 0):
                 
-        if(n <= 0):
-            return True
-        else:
-            return False
+                
+                prev = (i == 0 or (flowerbed[i - 1] == 0))
+                 
+                next1 = ((i == len(flowerbed)-1) or (flowerbed[i+1] == 0))
+                  
+                    
+                if(prev and next1):
+                    count += 1
+                    flowerbed[i] = 1
+                    
+                    if(count >= n):
+                        return True
+                    
+                    
+                    
+                
+                
+        return count >= n
+       
+                
+            
+            
+                
+            
+            
                 
         
                 
