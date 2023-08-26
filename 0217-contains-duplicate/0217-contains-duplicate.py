@@ -2,14 +2,16 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
        
     
-        nums.sort()
+        arr = set(nums)
         
-        for i in range(len(nums)-1):
+        if(len(arr) == len(nums)):
+            return False
+        else:
+            return True
+                
+           
+                
             
-            if(nums[i] == nums[i+1]):
-                return True
-            
-        return False
             
             
         
