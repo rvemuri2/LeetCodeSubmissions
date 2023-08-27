@@ -6,9 +6,7 @@ class Solution:
         for i in range(len(nums)):
             
             
-            num = target - nums[i]
-            
-            if(num in arr):
+            if(target-nums[i] in arr):
                 return [i, arr.index(target - nums[i])]
             
             arr.append(nums[i])
