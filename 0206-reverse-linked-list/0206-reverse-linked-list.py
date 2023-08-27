@@ -11,11 +11,14 @@ class Solution:
         prev = None
         curr = head
         
-        while(curr):
-            
+        while(curr != None):
             n = curr.next
+            
             curr.next = prev
+            
             prev = curr
+            
+            
             curr = n
             
         return prev
