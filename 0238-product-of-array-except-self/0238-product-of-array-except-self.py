@@ -1,23 +1,22 @@
 class Solution(object):
     def productExceptSelf(self, nums):
         
-        arr = [1] * len(nums)
+        prefix = [1] * len(nums)
         
-        p = 1
-        for i in range(len(nums)): 
-            
-            arr[i] = p
-            p *= nums[i]
-            
+        val = 1
+        for i in range(len(nums)):
+        
+           
+            prefix[i] = val
+            val *= nums[i]
             
         post = 1
-        
         for i in range(len(nums)-1, -1, -1):
-            
-            arr[i] *= post
+            prefix[i] *= post
             post *= nums[i]
             
-        return arr
+            
+        return prefix
             
             
        
