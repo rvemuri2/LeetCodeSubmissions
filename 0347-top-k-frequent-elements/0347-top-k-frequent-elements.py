@@ -9,7 +9,7 @@ class Solution:
             h[i] = 1 + h.get(i, 0) 
             
          
-        print(h)
+       
         
         for i in range(k):
             val = max(h.values())
