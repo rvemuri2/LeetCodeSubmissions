@@ -1,16 +1,21 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
-        d = defaultdict(list)
+        hash1 = defaultdict(list)
         
         for i in strs:
-            ch = [0] * 26
             
-            for j in i:
+            arr = [0] * 26
+            
+            for c in i:
                 
-                ch[ord(j) - ord("a")] += 1
+                arr[ord(c) - ord("a")] += 1
                 
+        
+            hash1[tuple(arr)].append(i)
             
-            d[tuple(ch)].append(i)
+        return hash1.values()
             
-        return d.values()
+        
+            
+            
