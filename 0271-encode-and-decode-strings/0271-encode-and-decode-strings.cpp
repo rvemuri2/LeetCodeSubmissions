@@ -1,23 +1,30 @@
-public class Codec {
-	// Encodes a list of strings to a single string.
-    public String encode(List<String> strs) {
-        StringBuilder sb = new StringBuilder();
-        for(String s : strs) {
-            sb.append(s.length()).append('/').append(s);
+class Codec {
+public:
+
+    // Encodes a list of strings to a single string.
+    string encode(vector<string>& strs) {
+        string encoded = "";
+        for (string &str: strs) {
+            int len = str.size();
+            encoded += to_string(len) + "@" + str;
         }
-        return sb.toString();
+        
+        return encoded;
     }
 
     // Decodes a single string to a list of strings.
-    public List<String> decode(String s) {
-        List<String> ret = new ArrayList<String>();
-        int i = 0;
-        while(i < s.length()) {
-            int slash = s.indexOf('/', i);
-            int size = Integer.valueOf(s.substring(i, slash));
-            i = slash + size + 1;
-            ret.add(s.substring(slash + 1, i));
+    vector<string> decode(string s) {
+        vector<string> r;
+        int head = 0;
+        while (head < s.size())    {
+            int at_pos = s.find_first_of('@', head);
+            int len = stoi(s.substr(head, at_pos - head));
+            head = at_pos + 1;
+            r.push_back(s.substr(head, len));
+            head += len;
         }
-        return ret;
+        
+        return r;
     }
-}
+};
+// codec.decode(codec.encode(strs));
