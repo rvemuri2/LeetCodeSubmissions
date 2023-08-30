@@ -6,7 +6,7 @@ class Codec:
             str1 += str(len(i)) + "!" + i
             
         
-        print(str1)
+       
         return str1
 
     def decode(self, s: str) -> List[str]:
