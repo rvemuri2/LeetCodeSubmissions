@@ -3,7 +3,7 @@ class Codec:
     def encode(self, strs: List[str]) -> str: 
         str1 = ""
         for i in strs:
-            str1 += str(len(i)) + "#" + i
+            str1 += str(len(i)) + "!" + i
             
         
         print(str1)
@@ -15,7 +15,7 @@ class Codec:
         
         while(i < len(s)):
             j = i
-            while(s[j] != "#"):
+            while(s[j] != "!"):
                 j += 1
             l = int(s[i:j])
             arr.append(s[j + 1 : j + 1 + l])
