@@ -7,7 +7,7 @@ class Solution:
         print(h)
         
         count = 0
-        length = 0
+   
    
         for i in nums:
             if(i - 1 not in h):
