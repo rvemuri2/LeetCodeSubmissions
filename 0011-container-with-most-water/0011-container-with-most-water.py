@@ -14,7 +14,7 @@ class Solution:
                 j-=1
             
             if(height[j] > height[i]):
-                area = max(area, height[i] * abs((j - i)))  
+                area = max(area, height[i] * ((j - i)))  
                 i+=1
             
         return area
