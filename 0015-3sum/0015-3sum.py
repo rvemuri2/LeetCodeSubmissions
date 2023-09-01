@@ -6,9 +6,9 @@ class Solution:
         
         prev = 1
        
-        for x in range(len(nums)):
+        for x, a in enumerate(nums):
             
-            if nums[x] == prev:
+            if x > 0 and a == nums[x - 1]:
                 continue
                 
             
