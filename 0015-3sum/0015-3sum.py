@@ -4,7 +4,7 @@ class Solution:
         finalnums = []
         nums.sort() 
         
-        prev = 1
+  
        
         for x, a in enumerate(nums):
             
@@ -32,7 +32,8 @@ class Solution:
                     left+=1
                     while(nums[left] == nums[left-1] and left < right):
                         left += 1 
-            prev = firstNum
+                        
+           
                 
         return finalnums
                     
