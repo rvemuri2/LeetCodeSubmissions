@@ -8,7 +8,7 @@ class Solution:
        
         for x, a in enumerate(nums):
             
-            if x > 0 and a == nums[x - 1]:
+            if x > 0 and a == nums[x - 1]:     
                 continue
                 
             
