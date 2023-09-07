@@ -6,6 +6,7 @@ class Solution:
         
         
         
+        
         for i in h:
             if(i - 1 not in h):
                 length = 0
