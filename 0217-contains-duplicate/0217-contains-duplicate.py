@@ -1,17 +1,18 @@
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-       
-    
-        arr = set(nums)
+class Solution(object):
+    def containsDuplicate(self, nums):
         
-        if(len(arr) == len(nums)):
-            return False
-        else:
-            return True
-                
-           
-                
+        h = {}
+        
+        for i in nums:
+            h[i] = 1 + h.get(i, 0)
             
-            
-            
+        for i in h:
+            if(h[i] > 1):
+                return True
+        
+        return False
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
         
