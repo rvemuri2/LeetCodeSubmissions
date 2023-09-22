@@ -3,7 +3,7 @@ class Solution:
         
         h = {}
         arr = []
-        m = 0
+    
         for i in nums:
             
             h[i] = 1 + h.get(i, 0)
