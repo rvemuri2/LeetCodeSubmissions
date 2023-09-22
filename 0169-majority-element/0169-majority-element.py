@@ -9,7 +9,7 @@ class Solution:
             h[i] = 1 + h.get(i, 0)
             arr.append(max(h, key=h.get))
         
-        print(h)
+       
         return arr[-1]
         
         
