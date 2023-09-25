@@ -8,19 +8,13 @@ class Solution:
         print("c2", c2)
         
         
-        for i in c1:
-            
-            if i not in c2:
-                return i
-            
-            elif c1[i] < c2[i]:
-                return i
-            
-            
         for i in c2:
+            
             if i not in c1:
-               
                 return i
             
-            elif c2[i] < c1[i]:
+            elif c1[i] < c2[i] or c2[i] < c1[i]:
                 return i
+            
+            
+       
