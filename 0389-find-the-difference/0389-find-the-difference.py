@@ -13,7 +13,7 @@ class Solution:
             if i not in c1:
                 return i
             
-            elif c1[i] < c2[i] or c2[i] < c1[i]:
+            if c2[i] < c1[i] or c1[i] < c2[i]:
                 return i
             
             
