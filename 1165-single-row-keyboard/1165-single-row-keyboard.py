@@ -16,7 +16,7 @@ class Solution:
         for i in word: 
             
             count += abs((l-h[i]))
-            print(count)
+         
             l = h[i]
             
         return count
