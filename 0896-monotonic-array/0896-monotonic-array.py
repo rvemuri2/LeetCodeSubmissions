@@ -17,7 +17,6 @@ class Solution:
                 
                 Scount += 1
                 Lcount += 1
-                
             
         
         
