@@ -1,8 +1,6 @@
 class Solution:
     def isMonotonic(self, nums: List[int]) -> bool:
         
-        
-        
         Lcount = 0
         Scount = 0
         for i in range(len(nums)-1):
@@ -11,11 +9,11 @@ class Solution:
                 
                 Scount += 1
             
-            if(nums[i] < nums[i+1]):
+            elif(nums[i] < nums[i+1]):
                 
                 Lcount += 1
         
-            if(nums[i] == nums[i+1]):
+            else:
                 
                 Scount += 1
                 Lcount += 1
