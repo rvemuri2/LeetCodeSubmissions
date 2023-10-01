@@ -12,6 +12,8 @@ class Solution:
                     return str1
                 
                 
+                print(j[i])
+            print("hi")
             str1 += strs[0][i]
             
         return str1
