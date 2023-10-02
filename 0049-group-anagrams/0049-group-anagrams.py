@@ -1,23 +1,24 @@
-class Solution:
-    def groupAnagrams(self, strs: List[str]):
-    
+class Solution(object):
+    def groupAnagrams(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: List[List[str]]
+        """
+        
         h = defaultdict(list)
-        
-        
         
         for i in strs:
             
             arr = [0] * 26
             
-            for k in i:
+            for j in i: 
                 
-                arr[ord(k) - ord("a")] += 1
-              
+                arr[ord(j) - ord("a")] += 1
                 
+            
             h[tuple(arr)].append(i)
-        
+            
         return h.values()
-            
         
-            
-            
+        
+        
