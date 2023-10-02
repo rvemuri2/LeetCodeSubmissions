@@ -1,5 +1,10 @@
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+class Solution(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
         
         h1 = {}
         h2 = {}
@@ -7,25 +12,24 @@ class Solution:
         if(len(s) != len(t)):
             return False
         
-        for i in range(len(s)):
+        else:
             
-            h1[s[i]] = 1 + h1.get(s[i], 0)
-            h2[t[i]] = 1 + h2.get(t[i], 0)
-            
-        print("h1", h1)
-        print("h2", h2)
-        
-        for j in h1: 
-            
-            if(h1[j] != h2.get(j)):
-                return False
-        
-        return True
-        
-        
-            
-          
-     
+            for i in s: 
                 
+                h1[i] = 1 + h1.get(i, 0)
                 
+            for i in t:
+                
+                h2[i] = 1 + h2.get(i, 0)
+                
+        
+            
+            for i in h1:
+                
+                if h1[i] != h2.get(i):
+                    return False
+                
+            return True
+            
+            
         
