@@ -8,12 +8,10 @@ class Solution:
             
             for j in strs[1:]:
                 
-                if(i == len(j) or j[i] != strs[0][i]):
+                if(i == len(j) or strs[0][i] != j[i]):
+                    
                     return str1
                 
-                
-                print(j[i])
-            print("hi")
             str1 += strs[0][i]
             
         return str1
