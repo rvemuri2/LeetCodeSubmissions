@@ -9,7 +9,7 @@ class Solution:
                 arr.pop()         
             arr.append(i)
         
-        arr = arr[:len(arr) - k] 
+        arr = arr[:len(arr) - k] #case for single digit input
         
         res = "".join(arr).lstrip('0')
         
