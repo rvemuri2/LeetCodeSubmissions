@@ -8,7 +8,7 @@ class Solution:
                 k -= 1
                 arr.pop()         
             arr.append(i)
-        
+        print(arr[:len(arr) - k])
         arr = arr[:len(arr) - k] #case for single digit input
         
         res = "".join(arr).lstrip('0')
