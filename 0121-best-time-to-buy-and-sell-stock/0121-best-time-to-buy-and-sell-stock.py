@@ -1,13 +1,13 @@
 class Solution(object):
     def maxProfit(self, prices):
-        l = 0
+      
         total = 0
         least = float('inf')
         
-        for i in range(1, len(prices)):
-            least = min(least, prices[l])
-            total = max(total, prices[i] - least)
-            l+=1
+        for i in prices:
+            least = min(least, i)
+            total = max(total, i - least)
+           
             
         return total
         """
