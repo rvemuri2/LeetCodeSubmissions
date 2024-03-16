@@ -21,5 +21,5 @@ class Solution:
             
             
             
-        return len(students)
+        return len(sandwiches)
         
