@@ -18,8 +18,8 @@ class Solution:
                 sandwiches.pop(0)
                 count = 0
                 
-                
             
             
-        return count 
+            
+        return len(students)
         
