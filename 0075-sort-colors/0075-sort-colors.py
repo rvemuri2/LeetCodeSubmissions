@@ -1,8 +1,7 @@
-class Solution(object):
-    def sortColors(self, nums):
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
         """
-        :type nums: List[int]
-        :rtype: None Do not return anything, modify nums in-place instead.
+        Do not return anything, modify nums in-place instead.
         """
         
         l, r = 0, len(nums) - 1
@@ -23,7 +22,8 @@ class Solution(object):
                 i-=1
             
             i+=1
-                
             
-                
         
+            
+            
+            
