@@ -19,7 +19,7 @@ class Solution {
             }
         }
 
-        // If all positions are filled correctly, answer is n+1
+        
         return n + 1;
     }
 }
