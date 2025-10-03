@@ -11,9 +11,22 @@ class Solution {
                 nums[temp - 1] = temp;
             }
         }
+
+        // Find the first index where nums[i] != i+1
         for (int i = 0; i < n; i++) {
-            if (nums[i] != i + 1) return i + 1;
+            if (nums[i] != i + 1) {
+                return i + 1;
+            }
         }
+
+        // If all positions are filled correctly, answer is n+1
         return n + 1;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+
     }
 }
