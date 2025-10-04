@@ -71,7 +71,7 @@ public class Main {
 
         // Random negatives/invalid (digits only rule)
         List<String> invalids = Arrays.asList("1a2", "++", "");
-        for (String s : invalids) {}
+
     }
 
     private static void run(String num, boolean expected, Solution sol) {
