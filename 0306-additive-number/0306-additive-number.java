@@ -69,7 +69,7 @@ public class Main {
         // "123581321345589144" => 1,2,3,5,8,13,21,34,55,89,144
         run("123581321345589144", true, sol);
 
-        // Random negatives/invalid (digits only rule)
+        
     }
 
     private static void run(String num, boolean expected, Solution sol) {
