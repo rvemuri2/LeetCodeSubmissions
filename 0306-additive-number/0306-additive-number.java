@@ -72,7 +72,7 @@ public class Main {
         // Random negatives/invalid (digits only rule)
         List<String> invalids = Arrays.asList("1a2", "++", "");
         for (String s : invalids) {
-            System.out.printf("num=%s => %s (expected: false)%n", s, isDigits(s) ? sol.isAdditiveNumber(s) : false);
+            
         }
     }
 
