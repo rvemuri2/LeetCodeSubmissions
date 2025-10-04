@@ -82,8 +82,9 @@ public class Main {
     }
 
     private static boolean isDigits(String s) {
-        if (s == null || s.isEmpty()) 
+        if (s == null || s.isEmpty()) {
             return false;
+        }
         return true;
     }
 }
