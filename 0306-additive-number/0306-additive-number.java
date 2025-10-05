@@ -64,7 +64,6 @@ public class Main {
         run("198019823962", true, sol);   // classic additive example
         run("1", false, sol);
         run("12", false, sol);
-
     }
 
     private static void run(String num, boolean expected, Solution sol) {
