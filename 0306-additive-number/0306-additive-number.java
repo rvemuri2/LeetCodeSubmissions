@@ -56,8 +56,7 @@ public class Main {
         run("199100199", true, sol);
 
         // Edge cases
-        run("000", true, sol);            // 0,0,0
-                           
+        run("000", true, sol);            // 0,0,0                  
     }
 
     private static void run(String num, boolean expected, Solution sol) {
