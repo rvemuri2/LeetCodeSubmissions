@@ -65,7 +65,6 @@ public class Main {
         run("1", false, sol);
         run("12", false, sol);
 
-        
     }
 
     private static void run(String num, boolean expected, Solution sol) {
