@@ -60,7 +60,7 @@ public class Main {
         run("101", true, sol);            // 1,0,1
         run("1023", false, sol);          // leading zero would break
         run("1203", false, sol);
-        run("0235813", false, sol);       // cannot start with leading zero
+        run("0235813", false, sol);
     }
 
     private static void run(String num, boolean expected, Solution sol) {
