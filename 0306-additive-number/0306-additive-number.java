@@ -66,7 +66,7 @@ public class Main {
         run("12", false, sol);
 
         // Very large numbers (overflow-safe due to BigInteger)
-        // "123581321345589144" => 1,2,3,5,8,13,21,34,55,89,144
+        
     }
 
     private static void run(String num, boolean expected, Solution sol) {
