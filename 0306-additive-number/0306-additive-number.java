@@ -59,7 +59,6 @@ public class Main {
         run("000", true, sol);            // 0,0,0
         run("101", true, sol);            // 1,0,1
         run("1023", false, sol);          // leading zero would break
-        
     }
 
     private static void run(String num, boolean expected, Solution sol) {
