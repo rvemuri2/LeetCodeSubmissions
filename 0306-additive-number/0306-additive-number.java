@@ -54,8 +54,7 @@ public class Main {
         // Provided examples
         run("112358", true, sol);
         run("199100199", true, sol);
-
-                                           
+                                   
     }
 
     private static void run(String num, boolean expected, Solution sol) {
