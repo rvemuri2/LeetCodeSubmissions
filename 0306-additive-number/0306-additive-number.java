@@ -63,7 +63,6 @@ public class Main {
         run("0235813", false, sol);       // cannot start with leading zero
         run("198019823962", true, sol);   // classic additive example
         run("1", false, sol);
-        
     }
 
     private static void run(String num, boolean expected, Solution sol) {
