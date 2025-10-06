@@ -49,7 +49,7 @@ class Solution {
 
 public class Main {
     public static void main(String[] args) {
-        Solution sol = new Solution();                  
+                 
     }
 
     private static void run(String num, boolean expected, Solution sol) {
