@@ -50,7 +50,7 @@ class Solution {
 public class Main {
     private static void run(String num, boolean expected, Solution sol) {
         boolean got = isDigits(num) && sol.isAdditiveNumber(num);
-        System.out.printf("num=%s => %s (expected: %s)%n", num, got, expected);
+        
     }
 
     private static boolean isDigits(String s) {
