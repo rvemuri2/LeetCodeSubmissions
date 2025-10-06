@@ -51,8 +51,7 @@ public class Main {
     public static void main(String[] args) {
         Solution sol = new Solution();
 
-        // Provided examples
-                                  
+        // Provided examples                         
     }
 
     private static void run(String num, boolean expected, Solution sol) {
