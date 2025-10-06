@@ -48,8 +48,7 @@ class Solution {
 }
 
 public class Main {
-    public static void main(String[] args) {              
-    }
+    public static void main(String[] args) {}
 
     private static void run(String num, boolean expected, Solution sol) {
         boolean got = isDigits(num) && sol.isAdditiveNumber(num);
