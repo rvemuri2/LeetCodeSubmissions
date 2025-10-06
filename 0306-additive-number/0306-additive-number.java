@@ -47,5 +47,4 @@ class Solution {
     }
 }
 
-public class Main {
-}
+public class Main {}
