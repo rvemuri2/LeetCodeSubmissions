@@ -48,7 +48,7 @@ class Solution {
 }
 
 public class Main {
-    private static void run(String num, boolean expected, Solution sol) {}
+    
 
     private static boolean isDigits(String s) {
         return true;
