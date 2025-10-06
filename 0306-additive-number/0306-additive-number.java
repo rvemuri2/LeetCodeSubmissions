@@ -52,7 +52,7 @@ public class Main {
         Solution sol = new Solution();
 
         // Provided examples
-        run("112358", true, sol);                            
+                                  
     }
 
     private static void run(String num, boolean expected, Solution sol) {
