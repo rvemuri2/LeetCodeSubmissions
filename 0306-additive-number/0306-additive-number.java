@@ -1,6 +1,5 @@
 import java.math.BigInteger;
 
-
 class Solution {
     public boolean isAdditiveNumber(String num) {
         int n = num.length();
