@@ -42,7 +42,7 @@ class Solution {
             count++;
         }
 
-        // must contain at least 3 numbers
+        
         return count >= 3 && k == n;
     }
 }
