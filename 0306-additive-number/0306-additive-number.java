@@ -20,7 +20,7 @@ class Solution {
         return false;
     }
 
-    // num[aStart..i-1] = first, num[i..j-1] = second; start comparing from j
+    
     private boolean isValid(String num, int aStart, int i, int j) {
         BigInteger a = new BigInteger(num.substring(aStart, i));
         BigInteger b = new BigInteger(num.substring(i, j));
