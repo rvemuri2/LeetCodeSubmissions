@@ -9,7 +9,6 @@ class Solution {
         for (int i = 1; i <= n - 2; i++) {
             // leading zero check for first number
             if (num.charAt(0) == '0' && i > 1) break;
-
             for (int j = i + 1; j <= n - 1; j++) {
                 if (num.charAt(i) == '0' && j - i > 1) 
                     break;
