@@ -32,7 +32,7 @@ class Solution {
             BigInteger c = a.add(b);
             String s = c.toString();
 
-            // if next chunk doesn't match c, sequence fails
+            
             if (!num.startsWith(s, k)) {
                 return false;
             }
