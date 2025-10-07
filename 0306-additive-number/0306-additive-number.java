@@ -11,7 +11,7 @@ class Solution {
             if (num.charAt(0) == '0' && i > 1) break;
 
             for (int j = i + 1; j <= n - 1; j++) {
-                // leading zero check for second number
+                
                 if (num.charAt(i) == '0' && j - i > 1) 
                     break;
 
