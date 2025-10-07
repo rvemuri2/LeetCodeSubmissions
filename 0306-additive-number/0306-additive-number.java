@@ -34,7 +34,6 @@ class Solution {
 
             // if next chunk doesn't match c, sequence fails
             if (!num.startsWith(s, k)) return false;
-
             k += s.length();
             a = b;
             b = c;
