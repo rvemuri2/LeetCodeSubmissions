@@ -31,7 +31,6 @@ class Solution {
         while (k < n) {
             BigInteger c = a.add(b);
             String s = c.toString();
-
             if (!num.startsWith(s, k)) {
                 return false;
             }
