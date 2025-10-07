@@ -42,7 +42,6 @@ class Solution {
             count++;
         }
 
-        
         return count >= 3 && k == n;
     }
 }
