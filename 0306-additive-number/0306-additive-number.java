@@ -20,7 +20,6 @@ class Solution {
         return false;
     }
 
-    
     private boolean isValid(String num, int aStart, int i, int j) {
         BigInteger a = new BigInteger(num.substring(aStart, i));
         BigInteger b = new BigInteger(num.substring(i, j));
