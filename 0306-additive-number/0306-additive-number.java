@@ -41,7 +41,6 @@ class Solution {
             b = c;
             count++;
         }
-
         return count >= 3 && k == n;
     }
 }
