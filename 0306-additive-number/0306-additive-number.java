@@ -8,7 +8,8 @@ class Solution {
         // First number ends at i-1, second number ends at j-1
         for (int i = 1; i <= n - 2; i++) {
             // leading zero check for first number
-            if (num.charAt(0) == '0' && i > 1) break;
+            if (num.charAt(0) == '0' && i > 1) 
+                break;
             for (int j = i + 1; j <= n - 1; j++) {
                 if (num.charAt(i) == '0' && j - i > 1) 
                     break;
