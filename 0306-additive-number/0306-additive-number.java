@@ -1,7 +1,6 @@
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
-
 class Solution {
     public boolean isAdditiveNumber(String num) {
         int n = num.length();
