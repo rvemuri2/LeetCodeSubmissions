@@ -14,7 +14,8 @@ class Solution {
                 // leading zero check for second number
                 if (num.charAt(i) == '0' && j - i > 1) break;
 
-                if (isValid(num, 0, i, j)) return true;
+                if (isValid(num, 0, i, j)) 
+                    return true;
             }
         }
         return false;
