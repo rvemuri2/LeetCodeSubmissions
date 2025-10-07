@@ -33,8 +33,9 @@ class Solution {
             String s = c.toString();
 
             // if next chunk doesn't match c, sequence fails
-            if (!num.startsWith(s, k)) 
+            if (!num.startsWith(s, k)) {
                 return false;
+            }
             k += s.length();
             a = b;
             b = c;
