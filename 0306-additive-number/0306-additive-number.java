@@ -12,7 +12,8 @@ class Solution {
 
             for (int j = i + 1; j <= n - 1; j++) {
                 // leading zero check for second number
-                if (num.charAt(i) == '0' && j - i > 1) break;
+                if (num.charAt(i) == '0' && j - i > 1) 
+                    break;
 
                 if (isValid(num, 0, i, j)) {
                     return true;
