@@ -48,6 +48,5 @@ public class Main {
 
         // Single node
         System.out.println(sol.findMinHeightTrees(1, new int[][]{})); // [0]
-
     }
 }
