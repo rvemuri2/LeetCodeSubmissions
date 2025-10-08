@@ -55,6 +55,6 @@ public class Main {
         System.out.println(sol.findMinHeightTrees(4, new int[][]{{0,1},{1,2},{2,3}})); // [1,2]
 
         // Star graph centered at 0
-        System.out.println(sol.findMinHeightTrees(5, new int[][]{{0,1},{0,2},{0,3},{0,4}})); // [0]
+        System.out.println(sol.findMinHeightTrees(5, new int[][]{{0,1},{0,2},{0,3},{0,4}}));
     }
 }
