@@ -51,6 +51,5 @@ public class Main {
 
         // Line graph (path) -> centers are middle (one or two)
         System.out.println(sol.findMinHeightTrees(5, new int[][]{{0,1},{1,2},{2,3},{3,4}})); // [2]
-
     }
 }
