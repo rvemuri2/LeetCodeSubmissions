@@ -47,6 +47,6 @@ public class Main {
         System.out.println(sol.findMinHeightTrees(6, new int[][]{{3,0},{3,1},{3,2},{3,4},{5,4}})); // [3,4]
 
         // Single node
-        System.out.println(sol.findMinHeightTrees(1, new int[][]{}));
+        
     }
 }
