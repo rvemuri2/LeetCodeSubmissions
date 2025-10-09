@@ -41,6 +41,6 @@ public class Main {
         Solution sol = new Solution();
 
         // Example 1
-        System.out.println(sol.findMinHeightTrees(4, new int[][]{{1,0},{1,2},{1,3}}));
+        
     }
 }
