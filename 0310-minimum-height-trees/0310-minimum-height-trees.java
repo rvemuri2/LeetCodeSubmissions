@@ -41,6 +41,5 @@ public class Main {
         Solution sol = new Solution();
 
         // Example 1
-        
     }
 }
