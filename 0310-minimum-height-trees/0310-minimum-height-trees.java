@@ -27,7 +27,8 @@ class Solution {
             for (int s = 0; s < size; s++) {
                 int leaf = leaves.poll();
                 for (int nei : graph.get(leaf)) {
-                    if (--degree[nei] == 1) leaves.add(nei);
+                    if (--degree[nei] == 1) 
+                        leaves.add(nei);
                 }
             }
         }
