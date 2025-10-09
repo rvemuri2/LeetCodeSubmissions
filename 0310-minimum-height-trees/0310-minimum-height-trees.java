@@ -35,4 +35,3 @@ class Solution {
         return new ArrayList<>(leaves); // 1 or 2 centers
     }
 }
-
