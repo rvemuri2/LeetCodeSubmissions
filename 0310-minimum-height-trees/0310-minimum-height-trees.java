@@ -20,7 +20,6 @@ class Solution {
         for (int i = 0; i < n; i++) if (degree[i] == 1) leaves.add(i);
 
         int remaining = n;
-        
         while (remaining > 2) {
             int size = leaves.size();
             remaining -= size;
