@@ -9,6 +9,7 @@ class Solution {
 
         for (int[] e : edges) {
             int u = e[0], v = e[1];
+            
             graph.get(u).add(v);
             graph.get(v).add(u);
             degree[u]++; degree[v]++;
@@ -22,7 +23,7 @@ class Solution {
          };
 
         int remaining = n;
-        
+
         while (remaining > 2) {
             int size = leaves.size();
             remaining -= size;
