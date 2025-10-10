@@ -20,6 +20,7 @@ class Solution {
         Deque<Integer> leaves = new ArrayDeque<>();
 
         for (int i = 0; i < n; i++) {
+            
             if (degree[i] == 1)
                 leaves.add(i);
          };
