@@ -11,7 +11,6 @@ class Solution {
 
         for (int[] e : edges) {
             int u = e[0], v = e[1];
-
             graph.get(u).add(v);
             graph.get(v).add(u);
             degree[u]++; degree[v]++;
@@ -34,7 +33,7 @@ class Solution {
 
             for (int s = 0; s < size; s++) {
                 int leaf = leaves.poll();
-                
+
                 for (int nei : graph.get(leaf)) {
                     if (--degree[nei] == 1) 
                         leaves.add(nei);
