@@ -18,7 +18,7 @@ class Solution {
         }
 
         Deque<Integer> leaves = new ArrayDeque<>();
-        
+
         for (int i = 0; i < n; i++) {
             if (degree[i] == 1) {
                 leaves.add(i);
@@ -30,6 +30,7 @@ class Solution {
         while (remaining > 2) {
             int size = leaves.size();
             remaining -= size;
+            
             for (int s = 0; s < size; s++) {
                 int leaf = leaves.poll();
                 for (int nei : graph.get(leaf)) {
