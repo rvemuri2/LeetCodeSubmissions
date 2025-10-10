@@ -4,7 +4,8 @@ class Solution {
 
         List<List<Integer>> graph = new ArrayList<>(n);
         int[] degree = new int[n];
-        for (int i = 0; i < n; i++) graph.add(new ArrayList<>());
+        for (int i = 0; i < n; i++) 
+            graph.add(new ArrayList<>());
         for (int[] e : edges) {
             int u = e[0], v = e[1];
             graph.get(u).add(v);
