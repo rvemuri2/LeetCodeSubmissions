@@ -11,8 +11,9 @@ class Solution {
             int u = e[0], v = e[1];
 
             graph.get(u).add(v);
-            
+
             graph.get(v).add(u);
+            
             degree[u]++; degree[v]++;
         }
 
