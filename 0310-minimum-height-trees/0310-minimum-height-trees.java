@@ -29,6 +29,7 @@ class Solution {
         int remaining = n;
 
         while (remaining > 2) {
+            
             int size = leaves.size();
             remaining -= size;
 
