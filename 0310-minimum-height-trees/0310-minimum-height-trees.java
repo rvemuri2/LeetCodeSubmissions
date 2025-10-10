@@ -6,7 +6,7 @@ class Solution {
         int[] degree = new int[n];
         for (int i = 0; i < n; i++) 
             graph.add(new ArrayList<>());
-            
+
         for (int[] e : edges) {
             int u = e[0], v = e[1];
             graph.get(u).add(v);
@@ -22,6 +22,7 @@ class Solution {
          };
 
         int remaining = n;
+        
         while (remaining > 2) {
             int size = leaves.size();
             remaining -= size;
