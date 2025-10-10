@@ -30,7 +30,7 @@ class Solution {
         while (remaining > 2) {
             int size = leaves.size();
             remaining -= size;
-            
+
             for (int s = 0; s < size; s++) {
                 int leaf = leaves.poll();
                 for (int nei : graph.get(leaf)) {
@@ -39,7 +39,6 @@ class Solution {
                 }
             }
         }
-
         return new ArrayList<>(leaves);
     }
 }
