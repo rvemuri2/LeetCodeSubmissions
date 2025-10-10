@@ -13,11 +13,12 @@ class Solution {
             graph.get(u).add(v);
 
             graph.get(v).add(u);
-            
+
             degree[u]++; degree[v]++;
         }
 
         Deque<Integer> leaves = new ArrayDeque<>();
+        
         for (int i = 0; i < n; i++) {
             if (degree[i] == 1) {
                 leaves.add(i);
