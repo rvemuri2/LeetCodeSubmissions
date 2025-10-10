@@ -4,7 +4,7 @@ class Solution {
 
         List<List<Integer>> graph = new ArrayList<>(n);
         int[] degree = new int[n];
-        
+
         for (int i = 0; i < n; i++) {
             graph.add(new ArrayList<>());
         }
@@ -22,9 +22,8 @@ class Solution {
         Deque<Integer> leaves = new ArrayDeque<>();
 
         for (int i = 0; i < n; i++) {
-            if (degree[i] == 1) {
+            if (degree[i] == 1)
                 leaves.add(i);
-            };
          };
 
         int remaining = n;
