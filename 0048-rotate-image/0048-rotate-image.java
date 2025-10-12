@@ -18,7 +18,6 @@ class Solution {
             int i=0;
             int j=n-1;
             while(i<j){
-                
                 int temp= matrix[k][i];
                 matrix[k][i]=matrix[k][j];
                 matrix[k][j]=temp;
