@@ -11,7 +11,7 @@ class Solution {
                 matrix[j][i]=temp;
             }
         }
-        // rotate
+        
 
         for(int k = 0; k < n; k++){
             int i = 0;
