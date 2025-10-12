@@ -10,7 +10,6 @@ class Solution {
                 matrix[j][i]=temp;
             }
         }
-        
 
         for(int k = 0; k < n; k++){
             int i = 0;
