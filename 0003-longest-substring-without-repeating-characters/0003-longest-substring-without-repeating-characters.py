@@ -1,25 +1,23 @@
-class Solution(object):
-    def lengthOfLongestSubstring(self, s):
-        
-        arr = []
-        l = 0
-        
-        m = 0
-        
-        for i in range(len(s)):
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+
+        left = 0
+        right = 0
+        length = 0
+        char = set()
+
+        while(left < len(s) and right < len(s)):
+
+            if(s[right] not in char):
+                char.add(s[right])
+                right += 1
+                length = max(length, len(char))
+
+            else:
+                char.remove(s[left])
+                left += 1
             
-            while(s[i] in arr):
-                arr.remove(s[l])
-                l+=1
-                
-                
-            arr.append(s[i])
-            m = max(m, (i - l + 1))
-           
+        
+        return length
             
-        return m
-        """
-        :type s: str
-        :rtype: int
-        """
         
