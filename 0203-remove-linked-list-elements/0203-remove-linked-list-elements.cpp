@@ -3,7 +3,6 @@
  * struct ListNode {
  *     int val;
  *     ListNode *next;
-
  */
 class Solution {
 public:
