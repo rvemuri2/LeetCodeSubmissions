@@ -15,4 +15,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/rvemuri2/LeetCodeSubmissions/tree/main/0011-container-with-most-water/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2769-find-the-maximum-achievable-number](https://github.com/rvemuri2/LeetCodeSubmissions/tree/main/2769-find-the-maximum-achievable-number/) | Easy |
 <!---LeetCode Topics End-->
